@@ -37,12 +37,13 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/dialog',
   /** @cli-barrel */
 ];
 
 const cliSystemConfigPackages: any = {};
 barrels.forEach((barrelName: string) => {
-  cliSystemConfigPackages[barrelName] = {main: 'index'};
+  cliSystemConfigPackages[barrelName] = { main: 'index' };
 });
 
 /** Type declaration for ambient System. */
@@ -59,4 +60,4 @@ System.config({
 });
 
 // Apply the user's configuration.
-System.config({map, packages});
+System.config({ map, packages });
