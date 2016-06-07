@@ -17,6 +17,6 @@ describe('App: Material2Do', () => {
 
   it('should have as title \'material2-do works!\'',
       inject([Material2DoAppComponent], (app: Material2DoAppComponent) => {
-    expect(app.title).toEqual('material2-do works!');
+    expect(app.okButtonText).toEqual('Create task');
   }));
 });
