@@ -12,7 +12,8 @@ import {DialogComponent} from './dialog/dialog.component';
 @Component({
   moduleId: module.id,
   selector: 'material2-do-app',
-  directives: [MdCard, MdToolbar, MdList, MdListItem, MdCheckbox, MdButton, MdIcon, DialogComponent],
+  directives: [MdCard, MdToolbar, MdList, MdListItem, MdCheckbox,
+    MdButton, MdIcon, DialogComponent],
   templateUrl: 'material2-do.component.html',
   styleUrls: ['material2-do.component.css'],
   providers: [MdIconRegistry, HTTP_PROVIDERS],
